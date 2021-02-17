@@ -1,7 +1,13 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Install npm 
+          command: npm install
+      - run:
+          name: Execute Index.js 
+          command: node index.js
