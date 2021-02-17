@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aman-jung/continuous-integration/issues"
   },
-  "homepage": "https://github.com/aman-jung/continuous-integration#readme"
+  "homepage": "https://github.com/aman-jung/continuous-integration#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
